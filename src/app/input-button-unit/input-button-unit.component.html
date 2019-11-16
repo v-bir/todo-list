@@ -1,0 +1,4 @@
+
+<input class="todo-input" [value]="title" #input (keyup.enter)="submitTitle($event.target.value)">
+<button class="btn" (click)="submitTitle(input.value)">Add</button>
+
